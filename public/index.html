@@ -67,6 +67,8 @@
     <section class="hero">
       <img class="hero-bg" src="/img/hero-scene.webp" srcset="/img/hero-scene-900.webp 900w, /img/hero-scene.webp 1760w" sizes="(max-width: 900px) 100vw, 58vw" alt="KAVOKA bars in four intensities with cacao pods and coffee beans" width="1760" height="1800" fetchpriority="high" />
       <div class="hero-shade"></div>
+      <div class="hero-light" aria-hidden="true"></div>
+      <div class="beans" aria-hidden="true"><i style="--x:6%;--d:19s;--s:.9;--delay:-2s"></i><i style="--x:18%;--d:24s;--s:.6;--delay:-11s"></i><i style="--x:29%;--d:21s;--s:1.1;--delay:-6s"></i><i style="--x:38%;--d:27s;--s:.7;--delay:-16s"></i><i style="--x:12%;--d:30s;--s:.5;--delay:-21s"></i><i style="--x:44%;--d:23s;--s:.8;--delay:-9s"></i></div>
       <div class="wrap">
         <div class="hero-copy">
           <span class="eyebrow">The Art of Cacao &amp; Coffee</span>
@@ -180,7 +182,7 @@
           <h2>Pick your <em>intensity.</em></h2>
           <p class="lead">Same Indonesian coffee in every bar, at four cacao levels. Choose it the way you'd order your kopi.</p>
         </div>
-        <figure class="pack-hero reveal"><img src="/img/pack-lineup.webp" alt="KAVOKA packaging: Extra Strong, Strong, Balanced and Mild bars" width="1536" height="492" loading="lazy" /></figure>
+        <figure class="pack-hero reveal"><img data-parallax="0.05" src="/img/pack-lineup.webp" alt="KAVOKA packaging: Extra Strong, Strong, Balanced and Mild bars" width="1536" height="492" loading="lazy" /></figure>
         <div class="bars">
           <article class="bar xs reveal"><span class="lvl">Extra Strong</span><h3>Dark · 80%</h3><div class="pct">80<small>% CACAO</small></div><p>Intense cacao with bold Indonesian coffee notes. For double-espresso people.</p><div class="meter"><i style="width:100%"></i></div></article>
           <article class="bar st reveal"><span class="lvl">Strong</span><h3>Dark · 70%</h3><div class="pct">70<small>% CACAO</small></div><p>Rich cacao with a distinctive coffee aroma. The everyday dark bar.</p><div class="meter"><i style="width:78%"></i></div></article>
@@ -319,7 +321,7 @@
               <a class="btn btn-gold" data-link="tiktokShop" target="_blank" rel="noopener" data-track="launch_shop"><svg><use href="#i-basket"/></svg> Claim on TikTok Shop</a>
             </div>
           </div>
-          <img src="/img/gift-set.webp" alt="KAVOKA gift box with ribbon" loading="lazy" width="1100" height="513" />
+          <img data-parallax="0.06" src="/img/gift-set.webp" alt="KAVOKA gift box with ribbon" loading="lazy" width="1100" height="513" />
         </div>
       </div>
     </section>
@@ -455,6 +457,7 @@
 
   <script src="/assets/links.js"></script>
   <script src="/assets/main.js"></script>
+  <script src="/assets/motion.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
