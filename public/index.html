@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/style.css" />
-  <link rel="preload" as="image" href="/img/bars-lineup.webp" />
+  <link rel="preload" as="image" href="/img/hero-scene.webp" imagesrcset="/img/hero-scene-900.webp 900w, /img/hero-scene.webp 1760w" imagesizes="(max-width: 900px) 100vw, 58vw" />
 </head>
 <body>
   <!-- SVG icon sprite -->
@@ -65,28 +65,30 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="eyebrow">Indonesia → Singapore</span>
-          <h1><span class="k">KAVØKA</span>Your coffee and your chocolate, <em>finally in one bar.</em></h1>
-          <p class="lead">Coffee-infused chocolate made from Indonesian cacao and Indonesian coffee. Four intensities, from a gentle Mild to an Extra Strong 80% cacao. Gift-ready packaging, priced under S$10.</p>
+      <img class="hero-bg" src="/img/hero-scene.webp" srcset="/img/hero-scene-900.webp 900w, /img/hero-scene.webp 1760w" sizes="(max-width: 900px) 100vw, 58vw" alt="KAVOKA bars in four intensities with cacao pods and coffee beans" width="1760" height="1800" fetchpriority="high" />
+      <div class="hero-shade"></div>
+      <div class="wrap">
+        <div class="hero-copy">
+          <span class="eyebrow">The Art of Cacao &amp; Coffee</span>
+          <h1>Your coffee and your chocolate, <em>finally in one bar.</em></h1>
+          <p class="lead">Coffee-infused chocolate made from Indonesian cacao and Indonesian coffee, in four intensities. Gift-ready, and priced under S$10.</p>
           <div class="hero-cta">
-            <a class="btn btn-gold" data-link="tiktokShop" target="_blank" rel="noopener" data-track="hero_tiktokshop"><svg><use href="#i-basket"/></svg> Buy on TikTok Shop</a>
-            <a class="btn btn-ghost" data-link="shopee" target="_blank" rel="noopener" data-track="hero_shopee"><svg><use href="#i-bag"/></svg> Shopee</a>
-            <a class="btn btn-ghost" href="#reel" data-track="hero_reel"><svg><use href="#i-play"/></svg> Watch the reel</a>
+            <a class="btn btn-gold" data-link="tiktokShop" target="_blank" rel="noopener" data-track="hero_tiktokshop"><svg><use href="#i-basket"/></svg> Shop on TikTok Shop</a>
+            <div class="hero-price"><strong>S$9.90</strong><span>per 50 g bar</span></div>
           </div>
-          <div class="hero-meta">
-            <div><strong>S$9.90</strong><span>per 50 g bar</span></div>
-            <div><strong>4</strong><span>intensities, 40–80% cacao</span></div>
-            <div><strong>2</strong><span>Indonesian origins</span></div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img src="/img/bars-lineup.webp" alt="KAVOKA bars: Extra Strong, Strong, Balanced and Mild" width="1600" height="1298" fetchpriority="high" />
-          <div class="price-tag"><small>Launch price</small><strong>S$9.90</strong></div>
-          <div class="promo-ribbon">Buy 2 · Mild free</div>
+          <p class="hero-alt">Also on <a data-link="shopee" target="_blank" rel="noopener" data-track="hero_shopee">Shopee</a> · <a href="#reel" data-track="hero_reel">watch the 30-s reel</a></p>
         </div>
       </div>
+      <a class="sticker" href="#strategy" data-track="hero_sticker" aria-label="Launch Week offer: buy 2, get Mild free, plus free shipping"><div>Launch week<b>Buy 2,<br />Mild free</b>+ free shipping</div></a>
+      <nav class="hero-chips" aria-label="Intensities">
+        <div class="wrap">
+          <a href="#collection"><i style="background:#6a1f17"></i>Extra Strong 80%</a>
+          <a href="#collection"><i style="background:#8a5532"></i>Strong 70%</a>
+          <a href="#collection"><i style="background:#c08a52"></i>Balanced 55%</a>
+          <a href="#collection"><i style="background:#f1e3c8"></i>Mild 40%</a>
+          <span class="r">Indonesia → Singapore</span>
+        </div>
+      </nav>
     </section>
 
     <div class="marquee" aria-hidden="true">
@@ -436,6 +438,12 @@
       <p style="margin:0;width:100%">Universitas Pelita Harapan Medan · Digital Marketing &amp; Social Media · 60-Minute Brand Launch Challenge. KAVOKA is a student brand concept; prices and figures come from the export-plan research.</p>
     </div>
   </footer>
+
+  <div class="buybar" id="buybar" aria-hidden="true">
+    <img src="/img/emblem.webp" alt="" width="40" height="40" />
+    <span><b>S$9.90</b>Buy 2, get Mild free</span>
+    <a class="btn btn-gold" data-link="tiktokShop" target="_blank" rel="noopener" data-track="buybar_shop" tabindex="-1"><svg><use href="#i-basket"/></svg> Buy now</a>
+  </div>
 
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pitch deck">
     <button class="lb-btn lb-close" id="lbClose" aria-label="Close">×</button>

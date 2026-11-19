@@ -21,6 +21,20 @@
   var nav = document.getElementById("nav");
   var onScroll = function () { nav && nav.classList.toggle("scrolled", window.scrollY > 30); };
   window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+  // Sticky mobile buy bar: show after the hero, hide near the final CTA
+  var buybar = document.getElementById("buybar"), hero = document.querySelector(".hero-cta"), finalCta = document.querySelector(".cta-final");
+  if (buybar && hero && "IntersectionObserver" in window) {
+    var heroVisible = true, ctaVisible = false;
+    var sync = function () {
+      var on = !heroVisible && !ctaVisible;
+      buybar.classList.toggle("show", on);
+      buybar.setAttribute("aria-hidden", String(!on));
+      buybar.querySelector("a").tabIndex = on ? 0 : -1;
+    };
+    new IntersectionObserver(function (e) { heroVisible = e[0].isIntersecting; sync(); }).observe(hero);
+    if (finalCta) new IntersectionObserver(function (e) { ctaVisible = e[0].isIntersecting; sync(); }).observe(finalCta);
+  }
   var menuBtn = document.getElementById("menuBtn"), navLinks = document.getElementById("navLinks");
   if (menuBtn) {
     menuBtn.addEventListener("click", function () {

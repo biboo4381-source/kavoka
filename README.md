@@ -17,3 +17,11 @@ Static HTML, CSS and JS with no build step, hosted on Vercel (`vercel.json` serv
 ```bash
 npx serve public
 ```
+
+## Hero banner options
+`banners/hero/` holds the three hero art directions as HTML sources and 1920×1000 PNG exports:
+- `photo-fullbleed`: full-bleed product photo with a launch sticker (**live on the site**)
+- `dark-moody`: gift box spotlight on espresso black, with the intensity chips
+- `editorial`: ivory magazine layout, "Kopi × Kakao"
+
+Section backgrounds use a modern batik tile (`public/img/batik-gold.svg`, `batik-earth.svg`) made from kawung motifs, cacao pods, coffee beans and leaves, plus a light grain texture.

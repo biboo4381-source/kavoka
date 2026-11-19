@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+<defs>
+<g id="k" fill="none" stroke="#6B4F3A" stroke-width="1.3">
+<ellipse cx="0" cy="-23" rx="11" ry="20"/><ellipse cx="0" cy="23" rx="11" ry="20"/>
+<ellipse cx="-23" cy="0" rx="20" ry="11"/><ellipse cx="23" cy="0" rx="20" ry="11"/>
+<ellipse cx="0" cy="-23" rx="4" ry="9"/><ellipse cx="0" cy="23" rx="4" ry="9"/>
+<ellipse cx="-23" cy="0" rx="9" ry="4"/><ellipse cx="23" cy="0" rx="9" ry="4"/>
+<circle r="3" fill="#6B4F3A"/></g>
+<g id="pod" fill="none" stroke="#6B4F3A" stroke-width="1.3" stroke-linecap="round">
+<path d="M0,-30 C14,-22 16,-8 16,0 C16,11 12,22 0,30 C-12,22 -16,11 -16,0 C-16,-8 -14,-22 0,-30Z"/>
+<path d="M0,-27 V27 M-8,-23 C-11,-8 -11,8 -8,23 M8,-23 C11,-8 11,8 8,23"/>
+<path d="M0,-30 C2,-36 6,-39 10,-40"/></g>
+<g id="bean" fill="none" stroke="#6B4F3A" stroke-width="1.3" stroke-linecap="round">
+<ellipse rx="8" ry="12"/><path d="M0,-11 C-5,-4 5,4 0,11"/></g>
+<g id="leaf" fill="none" stroke="#6B4F3A" stroke-width="1.2" stroke-linecap="round">
+<path d="M0,0 C10,-11 28,-11 40,0 C28,11 10,11 0,0Z"/><path d="M0,0 H38 M12,0 L18,-5 M20,0 L26,-5 M12,0 L18,5 M20,0 L26,5"/></g>
+<path id="d" d="M0,-6 L3.5,0 0,6 -3.5,0Z" fill="#6B4F3A"/>
+<g id="sprig"><use href="#leaf" transform="rotate(-35) translate(4,0)"/><use href="#leaf" transform="rotate(145) translate(4,0)"/><use href="#bean" transform="translate(-6,4) rotate(-20) scale(.75)"/><use href="#bean" transform="translate(7,-3) rotate(25) scale(.75)"/></g>
+</defs>
+<use href="#k" x="110" y="110"/>
+<use href="#k" x="0" y="0"/><use href="#k" x="220" y="0"/><use href="#k" x="0" y="220"/><use href="#k" x="220" y="220"/>
+<use href="#pod" transform="translate(110,0) rotate(28)"/><use href="#pod" transform="translate(110,220) rotate(28)"/>
+<use href="#sprig" transform="translate(0,110)"/><use href="#sprig" transform="translate(220,110)"/>
+<use href="#d" x="55" y="55"/><use href="#d" x="165" y="55"/><use href="#d" x="55" y="165"/><use href="#d" x="165" y="165"/>
+</svg>

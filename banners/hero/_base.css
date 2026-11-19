@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&display=swap");
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1000px;overflow:hidden;background:#120c08}
+.banner{position:relative;width:1920px;height:1000px;overflow:hidden;font-family:Montserrat,sans-serif;color:#f7f3e9}
+.serif{font-family:"Playfair Display",serif}
+.eyebrow{font-size:18px;letter-spacing:.34em;text-transform:uppercase;font-weight:600}
+.cta{display:inline-flex;align-items:center;gap:14px;height:76px;padding:0 40px;border-radius:999px;font-weight:700;font-size:22px;letter-spacing:.03em;text-decoration:none}
+.cta svg{width:26px;height:26px}
