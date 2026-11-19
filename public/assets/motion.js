@@ -62,13 +62,14 @@
   function countUp(el) {
     var txt = el.textContent, m = txt.match(/^([^\d]*)([\d.,]+)(.*)$/);
     if (!m) return;
-    var pre = m[1], raw = m[2].replace(/,/g, ""), suf = m[3], end = parseFloat(raw);
-    var dec = (raw.split(".")[1] || "").length, t0 = null, dur = 1400;
+    var pre = m[1], idr = /Rp/.test(pre), raw = idr ? m[2].replace(/\./g, "") : m[2].replace(/,/g, ""), suf = m[3], end = parseFloat(raw);
+    var dec = idr ? 0 : (raw.split(".")[1] || "").length, t0 = null, dur = 1400;
     function step(t) {
       if (!t0) t0 = t;
       var p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
       var v = (end * e).toFixed(dec);
-      if (m[2].indexOf(",") > -1) v = Number(v).toLocaleString("en-US", { minimumFractionDigits: dec });
+      if (idr) v = Number(v).toLocaleString("id-ID");
+      else if (m[2].indexOf(",") > -1) v = Number(v).toLocaleString("en-US", { minimumFractionDigits: dec });
       el.textContent = pre + v + suf;
       if (p < 1) requestAnimationFrame(step); else el.textContent = txt;
     }

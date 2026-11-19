@@ -72,8 +72,8 @@
       cap: "Mild 40% → <mark>Extra Strong 80%</mark><br>Which one are you?",
       title: "Pick your intensity", desc: "The four bars pop in one by one, like a coffee order. <b>Engagement:</b> “Comment your kopi order and we'll match your bar.”" },
     { t: "20–25s", tag: "Story", img: "/img/self-treat.webp", dur: 5,
-      cap: "Self-treat or gift — <mark>under S$10</mark>",
-      title: "Self-treat or gift", desc: "A CBD professional enjoys a square at their desk, then a Hard Box is handed over with a ribbon. <b>Proof:</b> premium quality for S$9.90." },
+      cap: "Self-treat or gift — <mark>Rp79.000</mark>",
+      title: "Self-treat or gift", desc: "A CBD professional enjoys a square at their desk, then a Hard Box is handed over with a ribbon. <b>Proof:</b> premium quality for Rp79.000." },
     { t: "25–30s", tag: "CTA", img: "/img/giftbox.webp", dur: 5,
       cap: "Tap the <mark>yellow basket</mark><br>Buy 2 · get Mild FREE",
       title: "Call to action", desc: "The product card appears and the yellow basket pulses. <b>CTA:</b> “Tap the yellow basket. Launch Week: buy 2, get Mild free.”" }
@@ -97,7 +97,7 @@
     ui.insertAdjacentHTML("beforeend",
       '<div class="reel-handle"><b>' + (L.handle || "@kavoka") + '</b>Coffee or chocolate? Why not both ☕🍫 #KopiOrChocolate</div>' +
       '<div class="reel-side"><div><svg><use href="#i-heart"/></svg>12.4K</div><div><svg><use href="#i-chat"/></svg>860</div><div><svg><use href="#i-share"/></svg>1.2K</div></div>' +
-      '<a class="yellow-basket" data-track="reel_basket" target="_blank" rel="noopener" href="' + (L.tiktokShop || "#") + '"><span class="bk"><svg><use href="#i-basket"/></svg></span><span><b>KAVOKA Coffee Chocolate</b>S$9.90 · Buy 2 get Mild free</span><span class="go">Buy</span></a>');
+      '<a class="yellow-basket" data-track="reel_basket" target="_blank" rel="noopener" href="' + (L.tiktokShop || "#") + '"><span class="bk"><svg><use href="#i-basket"/></svg></span><span><b>KAVOKA Coffee Chocolate</b>Rp79.000 · Buy 2 get Mild free</span><span class="go">Buy</span></a>');
 
     var idx = 0, start = 0, elapsed = 0, playing = true, raf = null;
     function go(i) {
