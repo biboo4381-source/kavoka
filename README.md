@@ -8,7 +8,7 @@ Brand website and link-in-bio page for **KAVOKA**, a coffee-infused chocolate ma
 | Link in bio | `/links` (also `/linktree`, `/bio`) | Link-in-bio page with TikTok Shop, Shopee, WhatsApp, gifting, reel, website and socials |
 
 ## Edit your links
-All shop and social URLs live in **`public/assets/links.js`**. Replace the placeholder URLs with your real TikTok Shop, Shopee, Instagram, TikTok, WhatsApp number and email, then commit. Vercel redeploys automatically.
+All shop and social URLs live in **`public/assets/links.js`**: Instagram and TikTok `@kavoka.chocolate`, plus the Shopee store. The TikTok Shop buttons go to the TikTok profile until you add a product link. The WhatsApp number and gifting email are still to fill in. Commit and Vercel redeploys automatically.
 
 ## Stack
 Static HTML, CSS and JS with no build step, hosted on Vercel (`vercel.json` serves `public/`). Turn on Vercel Web Analytics in the project dashboard to count button clicks (`data-track` events) for the conversion funnel.

@@ -1,17 +1,16 @@
 /*
  * KAVOKA — one place to edit every outbound link.
- * Replace the placeholder URLs below with your real shop / social links,
- * commit, and Vercel redeploys automatically. Both the website and the
+ * Edit a URL here, commit, and Vercel redeploys automatically. Both the website and the
  * /links page read from this file.
  */
 window.KAVOKA_LINKS = {
   // Sales channels
-  tiktokShop: "https://www.tiktok.com/search?q=kavoka%20chocolate", // TODO: your TikTok Shop product link
-  shopee: "https://shopee.sg/search?keyword=kavoka%20chocolate",     // TODO: your Shopee product link
+  tiktokShop: "https://www.tiktok.com/@kavoka.chocolate", // TikTok profile (shop tab). Swap in a TikTok Shop product link when you have one
+  shopee: "https://id.shp.ee/XAcxPZBT",
 
   // Social
-  tiktok: "https://www.tiktok.com/search?q=kavoka",                   // TODO: https://www.tiktok.com/@yourhandle
-  instagram: "https://www.instagram.com/explore/search/keyword/?q=kavoka", // TODO: https://www.instagram.com/yourhandle
+  tiktok: "https://www.tiktok.com/@kavoka.chocolate",
+  instagram: "https://www.instagram.com/kavoka.chocolate/",
 
   // Direct order / gifting (opens WhatsApp with a pre-filled message)
   whatsapp:
@@ -21,5 +20,5 @@ window.KAVOKA_LINKS = {
     "mailto:hello@kavoka.example?subject=" + encodeURIComponent("KAVOKA corporate gifting enquiry"), // TODO: real email
 
   // Handle shown on the /links page
-  handle: "@kavoka.id",
+  handle: "@kavoka.chocolate",
 };
